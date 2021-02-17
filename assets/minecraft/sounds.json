@@ -1,0 +1,140 @@
+{
+    "music.end": {
+        "sounds": [
+            {
+                "name": "music/atmospherics/void",
+                "stream": true,
+                "volume": 0.125,
+                "weight": 2
+            },
+            {
+                "name": "music/atmospherics/nebular",
+                "stream": true,
+                "volume": 0.125,
+                "weight": 2
+            },
+            {
+                "name": "music/atmospherics/moon",
+                "stream": true,
+                "volume": 0.125,
+                "weight": 2
+            },
+            {
+                "name": "music/atmospherics/space",
+                "stream": true,
+                "volume": 0.125,
+                "weight": 2
+            }
+        ]
+    },
+    "music.game": {
+        "sounds": [
+            {
+                "name": "music/atmospherics/moons",
+                "stream": true,
+                "volume": 0.125,
+                "weight": 2
+            },
+            {
+                "name": "music/atmospherics/void",
+                "stream": true,
+                "volume": 0.125,
+                "weight": 2
+            },
+            {
+                "name": "music/atmospherics/nebular",
+                "stream": true,
+                "volume": 0.125,
+                "weight": 2
+            },
+            {
+                "name": "music/atmospherics/strange",
+                "stream": true,
+                "volume": 0.125,
+                "weight": 2
+            }
+        ]
+    },
+    "music.nether.basalt_deltas": {
+        "sounds": [
+            {
+                "name": "music/atmospherics/away",
+                "stream": true,
+                "volume": 0.125,
+                "weight": 4
+            },
+            {
+                "name": "music/atmospherics/strange",
+                "stream": true,
+                "volume": 0.125,
+                "weight": 2
+            }
+        ]
+    },
+    "music.nether.nether_wastes": {
+        "sounds": [
+            {
+                "name": "music/atmospherics/away",
+                "stream": true,
+                "volume": 0.125,
+                "weight": 4
+            },
+            {
+                "name": "music/atmospherics/strange",
+                "stream": true,
+                "volume": 0.125,
+                "weight": 2
+            }
+        ]
+    },
+    "music.nether.soul_sand_valley": {
+        "sounds": [
+            {
+                "name": "music/atmospherics/away",
+                "stream": true,
+                "volume": 0.125,
+                "weight": 4
+            },
+            {
+                "name": "music/atmospherics/strange",
+                "stream": true,
+                "volume": 0.125,
+                "weight": 2
+            }
+        ]
+    },
+    "music.nether.crimson_forest": {
+        "sounds": [
+            {
+                "name": "music/atmospherics/away",
+                "stream": true,
+                "volume": 0.125,
+                "weight": 4
+            },
+            {
+                "name": "music/atmospherics/strange",
+                "stream": true,
+                "volume": 0.125,
+                "weight": 2
+            }
+        ]
+    },
+    "music.nether.warped_forest": {
+        "sounds": [
+            {
+                "name": "music/atmospherics/away",
+                "stream": true,
+                "volume": 0.25
+            }
+        ]
+    },
+    "music.under_water": {
+        "sounds": [
+            {
+                "name": "music/atmospherics/strange",
+                "stream": true,
+                "volume": 0.25
+            }
+        ]
+    }
+}
