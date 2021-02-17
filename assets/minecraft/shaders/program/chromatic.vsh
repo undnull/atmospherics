@@ -5,8 +5,6 @@ attribute vec3 Position;
 uniform mat4 ProjMat;
 uniform vec2 OutSize;
 
-uniform float Amount;
-
 varying vec2 TexCoord;
 
 void main(void)

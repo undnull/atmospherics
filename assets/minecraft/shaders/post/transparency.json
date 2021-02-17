@@ -63,8 +63,34 @@
             ]
         },
         {
-            "name": "fxaa",
+            "name": "chromatic",
             "intarget": "composite",
+            "outtarget": "postproc_0",
+            "uniforms": [
+                {
+                    "name": "Amount",
+                    "type": "float",
+                    "count": 1,
+                    "values": [ 0.5 ]
+                }
+            ]
+        },
+        {
+            "name": "barreldist",
+            "intarget": "postproc_0",
+            "outtarget": "postproc_1",
+            "uniforms": [
+                {
+                    "name": "Amount",
+                    "type": "float",
+                    "count": 1,
+                    "values": [ 0.21 ]
+                }
+            ]
+        },
+        {
+            "name": "fxaa",
+            "intarget": "postproc_1",
             "outtarget": "postproc_0",
             "uniforms": [
                 {
@@ -77,39 +103,13 @@
                     "name": "SubPixelShift",
                     "type": "float",
                     "count": 1,
-                    "values": [ 0.25 ]
+                    "values": [ 0.5 ]
                 },
                 {
                     "name": "ReduceMul",
                     "type": "float",
                     "count": 1,
-                    "values": [ 0.125 ]
-                }
-            ]
-        },
-        {
-            "name": "chromatic",
-            "intarget": "postproc_0",
-            "outtarget": "postproc_1",
-            "uniforms": [
-                {
-                    "name": "Amount",
-                    "type": "float",
-                    "count": 1,
-                    "values": [ 0.5 ]
-                }
-            ]
-        },
-        {
-            "name": "barreldist",
-            "intarget": "postproc_1",
-            "outtarget": "postproc_0",
-            "uniforms": [
-                {
-                    "name": "Amount",
-                    "type": "float",
-                    "count": 1,
-                    "values": [ 0.2 ]
+                    "values": [ 0.25 ]
                 }
             ]
         },
