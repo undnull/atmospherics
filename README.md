@@ -1,4 +1,6 @@
 # Atmospherics
+## Shaders
+This is still WIP, but I would try to write some post-processing stuff for Canvas.
 ## Music
 Atmospherics adds a bunch of new music tracks to the game making the gameplay
 experience richer. I try to add only non-copyrighted music so content creators
