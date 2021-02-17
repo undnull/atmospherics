@@ -1,7 +1,7 @@
 # Atmospherics
 ## Shaders
 Atmospherics adds a bunch of post-processing shaders using a new 1.16's shader.  
-These shaders require "Fabulous" graphics quality to work.
+These shaders require "Fabulous" graphics quality to work.  
 **Note:** `chromatic` and `barreldist` shaders are taken from the [Refraction](https://github.com/undnull/refraction).
 ## Music
 Atmospherics adds a bunch of new music tracks to the game making the gameplay
