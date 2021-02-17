@@ -1,5 +1,9 @@
 # Atmospherics
-## Music mapping
+## Music
+Atmospherics adds a bunch of new music tracks to the game making the gameplay
+experience richer. I try to add only non-copyrighted music so content creators
+can use this resource pack without any troubles.  
+**Note:** the additional music does _not_ replace the original soundtrack.
 |Filename|Artist|Track|License|Source|
 |---|---|---|---|---|
 |`away.ogg`|Patrick Patrikios|Away|N/A|[YT](https://youtu.be/LW9iL7wCiq4)|
