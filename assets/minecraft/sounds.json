@@ -2,6 +2,18 @@
     "music.end": {
         "sounds": [
             {
+                "name": "music/atmospherics/away",
+                "stream": true,
+                "volume": 0.125,
+                "weight": 2
+            },
+            {
+                "name": "music/atmospherics/eternal",
+                "stream": true,
+                "volume": 0.125,
+                "weight": 2
+            },
+            {
                 "name": "music/atmospherics/void",
                 "stream": true,
                 "volume": 0.125,
@@ -28,7 +40,20 @@
         ]
     },
     "music.game": {
+        "replace": true,
         "sounds": [
+            {
+                "name": "music/atmospherics/away",
+                "stream": true,
+                "volume": 0.125,
+                "weight": 2
+            },
+            {
+                "name": "music/atmospherics/eternal",
+                "stream": true,
+                "volume": 0.125,
+                "weight": 2
+            },
             {
                 "name": "music/atmospherics/moons",
                 "stream": true,
@@ -58,15 +83,9 @@
     "music.nether.basalt_deltas": {
         "sounds": [
             {
-                "name": "music/atmospherics/away",
+                "name": "music/atmospherics/crimson",
                 "stream": true,
-                "volume": 0.125,
-                "weight": 4
-            },
-            {
-                "name": "music/atmospherics/strange",
-                "stream": true,
-                "volume": 0.125,
+                "volume": 0.0625,
                 "weight": 2
             }
         ]
@@ -74,15 +93,9 @@
     "music.nether.nether_wastes": {
         "sounds": [
             {
-                "name": "music/atmospherics/away",
+                "name": "music/atmospherics/crimson",
                 "stream": true,
-                "volume": 0.125,
-                "weight": 4
-            },
-            {
-                "name": "music/atmospherics/strange",
-                "stream": true,
-                "volume": 0.125,
+                "volume": 0.0625,
                 "weight": 2
             }
         ]
@@ -90,15 +103,9 @@
     "music.nether.soul_sand_valley": {
         "sounds": [
             {
-                "name": "music/atmospherics/away",
+                "name": "music/atmospherics/crimson",
                 "stream": true,
-                "volume": 0.125,
-                "weight": 4
-            },
-            {
-                "name": "music/atmospherics/strange",
-                "stream": true,
-                "volume": 0.125,
+                "volume": 0.0625,
                 "weight": 2
             }
         ]
@@ -106,15 +113,9 @@
     "music.nether.crimson_forest": {
         "sounds": [
             {
-                "name": "music/atmospherics/away",
+                "name": "music/atmospherics/crimson",
                 "stream": true,
-                "volume": 0.125,
-                "weight": 4
-            },
-            {
-                "name": "music/atmospherics/strange",
-                "stream": true,
-                "volume": 0.125,
+                "volume": 0.0625,
                 "weight": 2
             }
         ]
@@ -122,9 +123,10 @@
     "music.nether.warped_forest": {
         "sounds": [
             {
-                "name": "music/atmospherics/away",
+                "name": "music/atmospherics/crimson",
                 "stream": true,
-                "volume": 0.25
+                "volume": 0.0625,
+                "weight": 2
             }
         ]
     },
@@ -133,7 +135,18 @@
             {
                 "name": "music/atmospherics/strange",
                 "stream": true,
-                "volume": 0.25
+                "volume": 0.125,
+                "weight": 2
+            }
+        ]
+    },
+    "music.dragon": {
+        "sounds": [
+            {
+                "name": "music/atmospherics/nll",
+                "stream": true,
+                "volume": 0.125,
+                "weight": 2
             }
         ]
     }

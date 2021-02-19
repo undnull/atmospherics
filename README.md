@@ -17,3 +17,6 @@ can use this resource pack without any troubles.
 |`space.ogg`|Topher Mohr and Alex Elena| A Walk Into Space|N/A|[YT](https://youtu.be/1d7n0RXAWCQ)|
 |`strange.ogg`|Matt Harris|Strange Stuff|N/A|[YT](https://youtu.be/bHg-uUd4VLw)|
 |`void.ogg`|TrackTribe|Into The Void|N/A|[YT](https://youtu.be/3ofKFAZBQ1w)|
+|`crimson.ogg`|Sextile|Crimson|N/A|[YT](https://youtu.be/m5o67X20o-I)|
+|`eternal.ogg`|Dan Henig|Eternal Garden|N/A|[YT](https://youtu.be/Psw0IM8YxcA)|
+|`nll.ogg`|The 129ers|Numb Limb Lips|N/A|[YT](https://youtu.be/nIGm0KqJv60)|
