@@ -14,7 +14,7 @@
                 "weight": 2
             },
             {
-                "name": "music/atmospherics/void",
+                "name": "music/atmospherics/moon",
                 "stream": true,
                 "volume": 0.125,
                 "weight": 2
@@ -26,13 +26,13 @@
                 "weight": 2
             },
             {
-                "name": "music/atmospherics/moon",
+                "name": "music/atmospherics/space",
                 "stream": true,
                 "volume": 0.125,
                 "weight": 2
             },
             {
-                "name": "music/atmospherics/space",
+                "name": "music/atmospherics/void",
                 "stream": true,
                 "volume": 0.125,
                 "weight": 2
@@ -61,12 +61,6 @@
                 "weight": 2
             },
             {
-                "name": "music/atmospherics/void",
-                "stream": true,
-                "volume": 0.125,
-                "weight": 2
-            },
-            {
                 "name": "music/atmospherics/nebular",
                 "stream": true,
                 "volume": 0.125,
@@ -74,6 +68,12 @@
             },
             {
                 "name": "music/atmospherics/strange",
+                "stream": true,
+                "volume": 0.125,
+                "weight": 2
+            },
+            {
+                "name": "music/atmospherics/void",
                 "stream": true,
                 "volume": 0.125,
                 "weight": 2
