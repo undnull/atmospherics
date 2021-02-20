@@ -40,7 +40,6 @@
         ]
     },
     "music.game": {
-        "replace": true,
         "sounds": [
             {
                 "name": "music/atmospherics/away",
