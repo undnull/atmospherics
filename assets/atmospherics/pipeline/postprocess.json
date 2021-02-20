@@ -1,0 +1,143 @@
+{
+    "include": [ "canvas:pipeline/copy.json" ],
+    "options": [
+        {
+            "includeToken": "atmospherics:postprocess_config",
+            "categoryKey": "Post processing",
+            "options": {
+                "chromatic_aberration_amount": {
+                    "default": 0.25,
+                    "min": 0.0,
+                    "max": 1.0,
+                    "nameKey": "Chromatic Aberration",
+                    "descriptionKey": "A fairly small color shift at the screen edges"
+                },
+                "cubic_distortion_amount": {
+                    "default": 0.21,
+                    "min": 0.0,
+                    "max": 0.21,
+                    "nameKey": "Cubic Distortion",
+                    "descriptionKey": "A screen-like cinematic image distortion"
+                }
+            }
+        }
+    ],
+    "programs": [
+        {
+            "name": "chromatic_aberration",
+            "vertexSource": "canvas:shaders/pipeline/post/simple_full_frame.vert",
+            "fragmentSource": "atmospherics:shaders/chromatic_aberration.frag",
+            "samplers": [ "_cvu_base" ]
+        },
+        {
+            "name": "cubic_distortion",
+            "vertexSource": "canvas:shaders/pipeline/post/simple_full_frame.vert",
+            "fragmentSource": "atmospherics:shaders/cubic_distortion.frag",
+            "samplers": [ "_cvu_base" ]
+        }
+    ],
+    "images": [
+        {
+            "name": "ping",
+            "lod": 0,
+            "internalFormat": "RGBA8",
+            "target": "TEXTURE_2D",
+            "texParams": [
+                {
+                    "name": "TEXTURE_MIN_FILTER",
+                    "val": "NEAREST"
+                },
+                {
+                    "name": "TEXTURE_MAG_FILTER",
+                    "val": "NEAREST"
+                },
+                {
+                    "name": "TEXTURE_WRAP_S",
+                    "val": "CLAMP"
+                },
+                {
+                    "name": "TEXTURE_WRAP_T",
+                    "val": "CLAMP"
+                }
+            ]
+        },
+        {
+            "name": "pong",
+            "lod": 0,
+            "internalFormat": "RGBA8",
+            "target": "TEXTURE_2D",
+            "texParams": [
+                {
+                    "name": "TEXTURE_MIN_FILTER",
+                    "val": "NEAREST"
+                },
+                {
+                    "name": "TEXTURE_MAG_FILTER",
+                    "val": "NEAREST"
+                },
+                {
+                    "name": "TEXTURE_WRAP_S",
+                    "val": "CLAMP"
+                },
+                {
+                    "name": "TEXTURE_WRAP_T",
+                    "val": "CLAMP"
+                }
+            ]
+        }
+    ],
+    "framebuffers": [
+        {
+            "name": "ping",
+            "colorAttachments": [
+                {
+                    "image": "ping"
+                }
+            ]
+        },
+        {
+            "name": "pong",
+            "colorAttachments": [
+                {
+                    "image": "pong"
+                }
+            ]
+        },
+        {
+            "name": "solid_main",
+            "colorAttachments": [
+                {
+                    "image": "solid_main"
+                }
+            ]
+        }
+    ],
+    "afterRenderHand": {
+        "passes": [
+            {
+                "name": "main_to_postprocess",
+                "program": "copy",
+                "framebuffer": "ping",
+                "samplerImages": [ "solid_main" ]
+            },
+            {
+                "name": "chromatic_aberration",
+                "program": "chromatic_aberration",
+                "framebuffer": "pong",
+                "samplerImages": [ "ping" ]
+            },
+            {
+                "name": "cubic_distortion",
+                "program": "cubic_distortion",
+                "framebuffer": "ping",
+                "samplerImages": [ "pong" ]
+            },
+            {
+                "name": "postprocess_to_main",
+                "program": "copy",
+                "framebuffer": "solid_main",
+                "samplerImages": [ "ping" ]
+            }
+        ]
+    }
+}
