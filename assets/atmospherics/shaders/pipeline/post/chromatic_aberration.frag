@@ -2,6 +2,10 @@
 #include canvas:shaders/pipeline/pipeline.glsl
 #include atmospherics:postprocess_config
 
+/*******************************************************************
+    atmospherics:shaders/pipeline/post/chromatic_aberration.frag
+********************************************************************/
+
 #define AMOUNT CHROMATIC_ABERRATION_AMOUNT
 
 uniform sampler2D _cvu_base;

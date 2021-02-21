@@ -2,6 +2,10 @@
 #include canvas:shaders/pipeline/pipeline.glsl
 #include atmospherics:postprocess_config
 
+/***************************************************************
+    atmospherics:shaders/pipeline/post/cubic_distortion.frag
+****************************************************************/
+
 #define AMOUNT CUBIC_DISTORTION_AMOUNT
 
 uniform sampler2D _cvu_base;

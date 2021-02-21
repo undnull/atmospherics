@@ -26,13 +26,13 @@
         {
             "name": "chromatic_aberration",
             "vertexSource": "canvas:shaders/pipeline/post/simple_full_frame.vert",
-            "fragmentSource": "atmospherics:shaders/chromatic_aberration.frag",
+            "fragmentSource": "atmospherics:shaders/pipeline/post/chromatic_aberration.frag",
             "samplers": [ "_cvu_base" ]
         },
         {
             "name": "cubic_distortion",
             "vertexSource": "canvas:shaders/pipeline/post/simple_full_frame.vert",
-            "fragmentSource": "atmospherics:shaders/cubic_distortion.frag",
+            "fragmentSource": "atmospherics:shaders/pipeline/post/cubic_distortion.frag",
             "samplers": [ "_cvu_base" ]
         }
     ],
