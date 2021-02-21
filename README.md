@@ -1,8 +1,8 @@
 # Atmospherics
 ## Shaders
-Atmospherics adds a bunch of post-processing shaders using a new 1.16's shader.  
-These shaders require "Fabulous" graphics quality to work.  
-**Note:** `chromatic` and `barreldist` shaders are ported from [Refraction](https://github.com/undnull/refraction).
+Atmospherics adds a bunch of post-processing shaders using [Canvas Renderer](https://github.com/grondag/canvas/releases) pipelines.  
+Please notice that Canvas is in early development stage and may break.  
+Some of shaders are ported from my Source Engine mod called [Refraction](https://github.com/undnull/refraction).
 ## Music
 Atmospherics adds a bunch of new music tracks to the game making the gameplay
 experience richer. I try to add only non-copyrighted music so content creators
