@@ -1,0 +1,8 @@
+{
+    "config.atmospherics.category.postprocessing": "Пост-обработка",
+
+    "config.atmospherics.name.chromatic_aberration": "Хроматическая аберрация",
+    "config.atmospherics.help.chromatic_aberration": "Небольшое смещение цветов на краях экрана",
+    "config.atmospherics.name.cubic_distortion": "Кубическое искажение объектива",
+    "config.atmospherics.help.cubic_distortion": "Кинематографическое искажение изображения на экране"
+}

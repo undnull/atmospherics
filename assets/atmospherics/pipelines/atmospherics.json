@@ -1,6 +1,6 @@
 {
-	"nameKey": "Atmospherics",
-	"descriptionKey": "yeeteth",
+	"nameKey": "pipeline.atmospherics.name",
+	"descriptionKey": "pipeline.atmospherics.desc",
     "include": [
         "canvas:pipelines/canvas_dev.json",
         "atmospherics:pipeline/postprocess.json"

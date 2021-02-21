@@ -3,21 +3,21 @@
     "options": [
         {
             "includeToken": "atmospherics:postprocess_config",
-            "categoryKey": "Post processing",
+            "categoryKey": "config.atmospherics.category.postprocessing",
             "options": {
                 "chromatic_aberration_amount": {
-                    "default": 0.25,
+                    "default": 0.35,
                     "min": 0.0,
                     "max": 1.0,
-                    "nameKey": "Chromatic Aberration",
-                    "descriptionKey": "A fairly small color shift at the screen edges"
+                    "nameKey": "config.atmospherics.name.chromatic_aberration",
+                    "descriptionKey": "config.atmospherics.help.chromatic_aberration"
                 },
                 "cubic_distortion_amount": {
                     "default": 0.21,
                     "min": 0.0,
                     "max": 0.21,
-                    "nameKey": "Cubic Distortion",
-                    "descriptionKey": "A screen-like cinematic image distortion"
+                    "nameKey": "config.atmospherics.name.cubic_distortion",
+                    "descriptionKey": "config.atmospherics.help.cubic_distortion"
                 }
             }
         }
