@@ -1,0 +1,83 @@
+{
+    "targets": [
+        "water",
+        "translucent",
+        "itemEntity",
+        "particles",
+        "clouds",
+        "weather",
+        "composite",
+        "postprocess"
+    ],
+    "passes": [
+        {
+            "name": "at_composite",
+            "intarget": "minecraft:main",
+            "outtarget": "composite",
+            "auxtargets": [
+                {
+                    "name": "DiffuseDepthSampler",
+                    "id": "minecraft:main:depth"
+                },
+                {
+                    "name": "TranslucentSampler",
+                    "id": "translucent"
+                },
+                {
+                    "name": "TranslucentDepthSampler",
+                    "id": "translucent:depth"
+                },
+                {
+                    "name": "ItemEntitySampler",
+                    "id": "itemEntity"
+                },
+                {
+                    "name": "ItemEntityDepthSampler",
+                    "id": "itemEntity:depth"
+                },
+                {
+                    "name": "ParticlesSampler",
+                    "id": "particles"
+                },
+                {
+                    "name": "ParticlesDepthSampler",
+                    "id": "particles:depth"
+                },
+                {
+                    "name": "CloudsSampler",
+                    "id": "clouds"
+                },
+                {
+                    "name": "CloudsDepthSampler",
+                    "id": "clouds:depth"
+                },
+                {
+                    "name": "WeatherSampler",
+                    "id": "weather"
+                },
+                {
+                    "name": "WeatherDepthSampler",
+                    "id": "weather:depth"
+                }
+            ]
+        },
+        {
+            "name": "at_lensdistortion",
+            "intarget": "composite",
+            "outtarget": "postprocess",
+            "uniforms": [
+                {
+                    "name": "Amount",
+                    "type": "float",
+                    "count": 2,
+                    "values": [ -4.0, 0.3 ]
+                }
+            ]
+        },
+        {
+            "name": "blit",
+            "intarget": "postprocess",
+            "outtarget": "minecraft:main"
+        }
+    ]
+}
