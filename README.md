@@ -1,8 +1,18 @@
 # Atmospherics
+## Textures
+Atmospherics replaces a bunch of UI and HUD textures to flatter/simpler ones.  
+##### Planned stuff with textures
+- [ ] Replace the Settings background texture
+- [ ] Add a custom menu background
+
 ## Shaders
-Atmospherics adds a bunch of post-processing shaders using [Canvas Renderer](https://github.com/grondag/canvas/releases) pipelines.  
-Please notice that Canvas is in early development stage and may break.  
-Some of shaders are ported from my Source Engine mod called [Refraction](https://github.com/undnull/refraction).
+Atmospherics adds a bunch of post processing effects using `transparency` pipeline. "Fabulous" quality is required!  
+Some of shaders are ported from my Source Engine mod called [Refraction](https://github.com/undnull/refraction).  
+##### Planned stuff with shaders
+- [ ] World curvature (1.17 core shaders)
+- [ ] Hand post processing (probably 1.17)
+- [ ] Support for Canvas Renderer (through some workaround)
+
 ## Music
 Atmospherics adds a bunch of new music tracks to the game making the gameplay
 experience richer. I try to add only non-copyrighted music so content creators
@@ -20,3 +30,10 @@ can use this resource pack without any troubles.
 |`space.ogg`|Topher Mohr and Alex Elena| A Walk Into Space|N/A|[YT](https://youtu.be/1d7n0RXAWCQ)|
 |`strange.ogg`|Matt Harris|Strange Stuff|N/A|[YT](https://youtu.be/bHg-uUd4VLw)|
 |`void.ogg`|TrackTribe|Into The Void|N/A|[YT](https://youtu.be/3ofKFAZBQ1w)|
+##### Planned stuff with music
+- [ ] Add more music!
+- [ ] Possibly learn and write my own ambient for the pack
+
+## License
+Atmospherics as a resource pack is licensed under [Creative Commons Attribution 4.0 International](LICENSE) license ([CC](https://creativecommons.org/licenses/by/4.0/)).  
+Music sources are licensed according to the [table](#music) above.  
